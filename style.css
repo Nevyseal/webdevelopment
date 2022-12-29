@@ -1,0 +1,223 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+nav{
+  width: 100%;
+  height: 75px;
+  line-height: 75px;
+  padding: 0 200px;
+  z-index: 1;
+  position: fixed;
+  background-image: linear-gradient(black,black);
+  
+  
+}
+
+
+nav .logo P{
+  font-size: 30px;
+  font-weight: bold;
+  float: left;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+ 
+}
+nav ul{
+  float:right;
+}
+nav li{
+  display:inline-block;
+  list-style:none;
+}
+nav li a{
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0px 30px;
+  color: white;
+  text-decoration: none;
+}
+nav li a:hover{
+  color: #ff8c69;
+  transition:all 0.5s ease 0s ;
+}
+.content-items img{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+}
+.slider-frame{
+  overflow: hidden;
+  height: 800px;
+  width: 1200px;
+  margin-left: 360px;
+  margin-top: 50px;
+  
+}
+
+/*--------Slide animation----******/
+
+@-webkit-keyframes slide_animation{
+  0%{left: 0px;}
+  10%{left: 0px;}
+  20%{left: 1200px;}
+  30%{left: 1200px;}
+  40%{left: 2400px;}
+  50%{left: 2400px;}
+  60%{left: 1200px;}
+  70%{left: 1200px;}
+  80%{left: 0px;}
+  90%{left: 0px;}
+  100%{left: 0px;}
+}
+.slide-images{
+  width: 3600px; 
+  height: 800px;
+  margin: 0 0 0 -2400px;
+  margin-bottom: 50px;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+
+}
+.img-container{
+  margin-top: 50px;
+  height: 800px;
+  width: 1200px;
+  position: relative;
+  float: left;
+
+}
+.nav--hidden{
+  transform : translateY(-50px);
+  box-shadow: none;
+}
+footer{
+  
+  height: auto;
+  width: 100vw;
+  font-family: "open sans";
+  padding-top: 40px;
+  color:white ;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  color: yellow;
+  font-size:1.8rem ;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+  padding-top: 30px;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 24px;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0 4rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: yellow;
+  
+}
+.socials a i{
+  font-size: 1.1rem;
+}
+.socials a:hover i{
+  color: #ff8c69;
+}
+.footer-bottom{
+  width: 100vw;
+  padding:20px 0 ;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+.image-central{
+  margin-top: 0px;
+  width: 100%;
+  
+}
+.icon{
+  padding-left: 20px;
+  height: 20px;
+  width: 20px;
+}
+.title_guns h1{
+  color: white;
+  margin-left:500px;
+}
+.table-enter table{
+  border: 10%;
+  background-color: yellow;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+.News_Items p{
+  color: yellow;
+  font-size:1.8rem ;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+  padding-top: 100px;
+  
+
+
+}
+.News_Items img{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding-top: 10px;
+} 
+.News_Items p:hover{
+  color: aqua;
+  transform-style: preserve-3d;
+}
+.battle_pass img{
+  width: 60%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+
+}
+.battle_pass p{
+  color: yellow;
+  padding-top: 100px;
+  font-size: 1.8rem;
+}
